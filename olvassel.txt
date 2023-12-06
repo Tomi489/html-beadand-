@@ -1,5 +1,7 @@
 Oldal készítője: Rutai Tamás
 
+Oldal linkje: https://tomi489.github.io/webfejlesztes/
+
 A weblapom a Tihanyi Hajós Egylet vitorlástáborainak a nem hivatalos oldala. Alapvető információ, képek, és jelentkező felület van benne.
 
 Képeket, és a tábor leírását pár helyen az eredeti weblapról vettem át. (https://www.thesail.hu/)
