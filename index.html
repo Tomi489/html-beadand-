@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rutai Tamás">
+    <meta name="description" content="A THE vitorlástáborának főoldala">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Vitorlástábor</title>
+    <link rel="icon" type="image/x-icon" href="képek/TheSail_favicon.png">
+    <script src="visszaszamlalo.js"></script>
+    <!-- Galéria -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="galleria-1.6.1/dist/galleria.min.js"></script>
+    <script src="galleria-1.6.1/src/themes/classic/galleria.classic.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#images').galleria({
+                width: 500,
+                height: 500
+            });
+        });
+    </script>
+</head>
+
+<body onload="napokszamolo()">
+    <header>
+        <img src="képek/TheSail_logo_70.png" alt="az egyesulet logoja">
+        Tihanyi Hajós Egylet Vitorlástábor
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a class="active" href="#">Főoldal</a></li>
+                <li><a href="leirasok.html">Képzések</a></li>
+                <li><a href="idopontok.html">Időpontok</a></li>
+                <li><a class="foglalas" href="foglalas.html">Foglalj most</a></li>
+            </ul>
+        </nav>
+        <article class="kocka otnyolc">
+            <h1 id="visszaszamlalo"></h1>
+        </article>
+        <article class="bemutatas">
+            <h2>
+                Hogy néz ki egy táborunk?
+            </h2>
+            <p>
+                Immár 22 éve teli csoportokkal, vidám hangulatban tartjuk vitorlás táborainkat Tihanyban. Ha érdekel a
+                vitorlázás és meg szeretnél ismerkedni ennek a szép sportnak az alapjaival, vagy már voltál nálunk és
+                magával ragadott a vízen suhanás, akkor várunk valamelyik táborunkba!
+            </p>
+            <p>
+                A biztonság és a jó hangulat az elsődleges nálunk, ezért töretlen figyelemmel és lelkesedéssel, nagyon
+                jó edzőkkel és tanárokkal, vidám, változatos programokkal igyekszünk megszolgálni az eddigi
+                bizalmatokat!
+            </p>
+            <p>
+                Minden táborunkban a csoportok 18 fősek, egy vitorlás edző és két tanár felügyel a gyerekeket a tábor
+                egész ideje alatt. Optimist, Pille és Topper vitorlásokban tanítunk mérettől és kortól függően. Az edző
+                gumimotorosban követi és irányítja a hajókat a vízen. A résztvevők lehetőség szerint napi 4-6 órát
+                töltenek vízen, emellett a program sportjátékokkal, kirándulással és egyéb szabadidős tevékenységgel
+                egészül ki. A szállás a kikötő melletti igényes klubházban van, ahol kis focipálya, ping-pong asztal,
+                sok egyéb játék és nagy társalgó várja a gyerekeket. Elhelyezés 6-8 ágyas szobákban. Étkezések a
+                klubházban történnek napi háromszor, emellett gyümölcscsel, csokival és kisebb uzsonnával is
+                számolhattok minden nap, igény és éhség szerint. Mentőmellényt biztosítunk és kötelező. A részvétel
+                feltétele a biztos úszni tudás!
+            </p>
+        </article>
+
+        <article id="images" class="bemutatas kozep">
+            <p class="galleia">
+                <img src="képek/galéria/3.jpg" alt="Ezen a képen nincs nagy szél" title="Boldog Optimistesek">
+                <img src="képek/galéria/4.jpg" alt="A táborosok a profik versenyét nézhetik" title="Vitorlásverseny">
+                <img src="képek/galéria/5.jpg" alt="Mindenki érdelődve figyel" title="Hajópakolás">
+                <img src="képek/galéria/6.jpg" alt="Éppen a csomók gyakorlása megy" title="Megduma">
+                <img src="képek/galéria/7.jpg" alt="A gyerekek mennek cserélni" title="Motoros">
+                <img src="képek/galéria/8.jpg" alt="Csak nem tudom hogy mire" title="Várakozás">
+                <img src="képek/galéria/9.jpg" alt="Itt egy Optimist részeinek leírása a feladat"
+                    title="Hajó részeinek tanulása">
+                <img src="képek/galéria/10.jpg" alt="Úgy néz ki, hogy valaki be is esett" title="Labdaszedő játék">
+                <img src="képek/galéria/11.jpg" alt="Szélcsenben a nagyobbak a borulást is gyakorolják"
+                    title="Felborult hajó">
+                <img src="képek/galéria/12.jpg" alt="Csak nehogy iszapos legyen az árbóc" title="Borulás 2">
+                <img src="képek/galéria/13.jpg" alt="mindenki a neki való hajóban gyakorol" title="Csendélet">
+                <img src="képek/galéria/14.jpg" alt="Vége az edzésnek irány a kikötő!" title="Kikötőben">
+                <img src="képek/galéria/15.jpg" alt="Szerencsére a műanyag hajóknak nem lesz baja"
+                    title="Közel az ütközéshez">
+                <img src="képek/galéria/16.jpg" alt="A nagyobbak kedvenc hajója" title="Topper">
+                <img src="képek/galéria/17.jpg" alt="Biztos elállt a szél" title="Vonta a partra">
+            </p>
+        </article>
+
+    </div>
+    <footer>
+        <p class="lablec">Ez a weblap nem az eredeti oldala a táboroknak!</p>
+        <p class="lablec">Kapcsolat: minta@emali.com</p>
+    </footer>
+</body>
+
+</HTML>

@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<HTML lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rutai Tamás">
+    <meta name="description" content="A THE vitorlástáborának foglaló oldala">
+    <link rel="stylesheet" href="style.css">
+    <title>Foglalás</title>
+    <link rel="icon" type="image/x-icon" href="képek/TheSail_favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- Validálás -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myform").validate({
+                rules: {
+                    nev: "required",
+                    szulo_neve: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    telefonszam: {
+                        required: true,
+                        rangelength: [11, 12]
+                    },
+                    elfogad: "required",
+                    mindennap: {
+                        required: true,
+                        number: true
+                    },
+                },
+                messages: {
+                    nev: " Írd be a neved!",
+                    szulo_neve: " Írd be a a szülő nevét!",
+                    password: {
+                        required: " Add meg a jelszavad!",
+                        minlength: " A jelszavad legalább 8 karakterhosszú legyen!"
+                    },
+                    email: {
+                        required: " Add meg az email címed!",
+                        minlength: " Valós email címet adj meg!"
+                    },
+                    telefonszam: {
+                        required: "Add meg a telefonszámod!",
+                        rangelength: "Valós telefonszámot adj meg!"
+                    },
+                    elfogad: " Kérlek fogadd el a feltételeinket!",
+                    mindennap: {
+                        required: "Muszály megadnod, hogy hány napot maradsz!",
+                        number: "Csak számot írhatsz!"
+                    },
+                },
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="képek/TheSail_logo_70.png" alt="az egyesulet logoja">
+        Tihanyi Hajós Egylet Vitorlástábor
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="leirasok.html">Képzések</a></li>
+                <li><a href="idopontok.html">Időpontok</a></li>
+                <li><a class="foglalas" href="#">Foglalj most</a></li>
+            </ul>
+        </nav>
+        <article class="otnyolc">
+            <form method="post" action="http://szamtud.uni-corvinus.hu/receive.php" id="myform">
+                <p>
+                    <label for="nev">Név:<input type="text" name="nev" class="kerdoiv-nagyobb" id="nev"></label> <br>
+                    <label for="email">Email cím:<input type="email" name="email" id="email"
+                            class="kerdoiv-nagyobb"></label>
+                    <br>
+                    <label for="szulo_neve">Szülő neve:<input type="text" name="szulo_neve" id="szulo_neve"
+                            class="kerdoiv-nagyobb"> </label><br>
+                    <label for="telefonszam">Telefonszám: <input type="tel" name="telefonszam" id="telefonszam"
+                            value="06-" class="kerdoiv-nagyobb"> </label><br>
+                    Milyen egyéb étkezési igényei vannak? <br>
+                    <label for="normal"><input type="checkbox" name="normal" id="normal" class="kerdoiv" checked>Normál
+                        menü</label><br>
+                    <label for="vega"><input type="checkbox" name="vega" id="vega" class="kerdoiv">Vegetáriánus menü
+                    </label><br>
+                    <label for="laktoz"><input type="checkbox" name="laktoz" id="laktoz" class="kerdoiv">Laktózérzékeny
+                        menü</label> <br>
+                    <label for="gluten"><input type="checkbox" name="gluten" id="gluten" class="kerdoiv">Gluténérzékeny
+                        menü </label><br>
+                    Melyik táborba kíván beiratkozni?<br>
+                    <select name="lista" class="kerdoiv-nagyobb">
+                        <label for="Június 23-30 Kezdő tábor">
+                            <option value="1.tabor" name="Június 23-30 Kezdő tábor" id="Június 23-30 Kezdő tábor">Június
+                                23-30 Kezdő tábor</option>
+                        </label>
+                        <label for="Június 16-23 Haladó tábor">
+                            <option value="2.tabor" name="Június 16-23 Haladó tábor" id="Június 16-23 Haladó tábor">
+                                Június 16-23 Haladó tábor</option>
+                        </label>
+                        <label for="Június 30 Július 7 Kapitányképző">
+                            <option value="3.tabor" name="Június 30 Július 7 Kapitányképző"
+                                id="Június 30 Július 7 Kapitányképző">Június 30 Július 7 Kapitányképző</option>
+                        </label>
+                        <label for="Július 7-14 Kezdő tábor">
+                            <option value="4.tabor" name="Július 7-14 Kezdő tábor" id="Július 7-14 Kezdő tábor">Július
+                                7-14 Kezdő tábor</option>
+                        </label>
+                        <label for="Július 14-21 Haladó tábor">
+                            <option value="5.tabor" name="Július 14-21 Haladó tábor" id="Július 14-21 Haladó tábor">
+                                Július 14-21 Haladó tábor</option>
+                        </label>
+                        <label for="Július 21-28 Kapitányképző">
+                            <option value="6.tabor" name="Július 21-28 Kapitányképző" id="Július 21-28 Kapitányképző">
+                                Július 21-28 Kapitányképző</option>
+                        </label>
+                        <label for="Július 28 Augusztus 4 Kezdő tábor">
+                            <option value="7.tabor" name="Július 28 Augusztus 4 Kezdő tábor"
+                                id="Július 28 Augusztus 4 Kezdő tábor">Július 28 Augusztus 4 Kezdő tábor</option>
+                        </label>
+                        <label for="Augusztus 4-11 Haladó tábor">
+                            <option value="8.tabor" name="Augusztus 4-11 Haladó tábor" id="Augusztus 4-11 Haladó tábor">
+                                Augusztus 4-11 Haladó tábor</option>
+                        </label>
+                        <label for="Augusztus 11-18 Kapitányképző">
+                            <option value="9.tabor" name="Augusztus 11-18 Kapitányképző"
+                                id="Augusztus 11-18 Kapitányképző">Augusztus 11-18 Kapitányképző</option>
+                        </label>
+                    </select>
+                    <br>
+                    Ott szeretne-e aludni?<br>
+                    <label for="alvas"><input type="radio" name="alvas" value="1" checked class="kerdoiv"
+                            id="alvas">Igen </label><br>
+                    <label for="alvas"><input type="radio" name="alvas" value="0" class="kerdoiv" id="alvas">Nem</label>
+                    <br>
+                    <label for="mindennap">Minden nap szeretne jönni? Ha nem a napok számát változtassa.<input
+                            type="number" name="mindennap" class="kerdoiv-nagyobb" id="mindennap" value="7"></label>
+                    <br>
+                    Elfogadja a feltétekeket?<br>
+                    <label for="elfogad"><input type="checkbox" name="elfogad" id="elfogad" class="kerdoiv"></label>
+                    <br>
+                    <label for="elküld"><input type="submit" value="Elküldés" class="kerdoiv-nagyobb" name="elküld"
+                            id="elküld"></label>
+                    <label for="Alaphelyzet"><input type="reset" value="Alaphelyzet" class="kerdoiv-nagyobb"
+                            name="Alaphelyzet" id="Alaphelyzet"></label>
+                </p>
+            </form>
+        </article>
+    </div>
+    <footer>
+        <p class="lablec">Ez a weblap nem az eredeti oldala a táboroknak!</p>
+        <p class="lablec">Kapcsolat: minta@emali.com</p>
+    </footer>
+</body>
+
+</HTML>

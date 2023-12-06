@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container>* {
+    width: fit-content;
+    margin: 0.5%;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-color: #a3bded;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: 'Varela Round', sans-serif;
+}
+header{
+    padding: 0px;
+    margin: 0px;
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: 3em;
+    color: black;
+    height: fit-content;
+    border-bottom: solid 2px black;
+}
+footer {
+    left:0px;
+    bottom:0px;
+    height:65px;
+    width:100%;
+    background: whitesmoke;
+    margin-top: 10px;
+    font-size: 2em;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+ }
+ .lablec
+ {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+ }
+article {
+    flex-basis: 100%;
+    background: linear-gradient(180deg, rgba(224,233,253,1) 0%, rgba(233,236,241,1) 90%);
+    color: black;
+    border-radius: 10px;
+    padding: 8px;
+    border: solid 2px black;
+    font-size: 1.5em;
+}
+aside {
+    flex-basis: 100%;
+    background: linear-gradient(180deg, rgba(224,233,253,1) 0%, rgba(233,236,241,1) 90%);
+    padding: 15px;
+    color: #000000;
+    text-align: center;
+    font-size: 0.84em;
+    border-radius: 10px;
+    border: solid 2px black;
+}
+section{
+    border-radius: 10px;
+    text-align: center;
+}
+nav {
+    padding: 8px;
+    flex-basis: 100%;
+    background: linear-gradient(180deg, rgba(224,233,253,1) 0%, rgba(233,236,241,1) 90%);
+    border-radius: 10px;
+    border: solid 2px black;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    padding: 8px;
+    margin-bottom: 12px;
+    color: black;
+    background-color: #3772FF;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    background-color: #DF2935;
+}
+
+nav li a:hover {
+    background-color: #FDCA40;
+}
+
+input{
+    display: inline-block;
+    padding: 8px;
+    margin: 8px;
+    margin-bottom: 25px;
+}
+form{
+    margin-left: 40px;
+}
+.kerdoiv{
+    height: 20px;
+    width: 20px;
+}
+.kerdoiv-nagyobb{
+    height: 40px;
+    width: 300px;
+}
+.foglalas{
+    height: 300%;
+    background-image: url("képek/viz.jpeg");
+    background-size: cover;
+    font-size: 50px;
+    text-align: center;
+}
+aside img{
+    width: 100%;
+}
+.kocka{
+    display: flex;
+    text-align: center;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+}
+.galleria {
+    width: 90vw;
+    height: 90vw;
+    align-content: center;
+    width: 100%;
+}
+.bemutatas
+{
+    width: 100%;
+}
+.dupla
+{
+    flex-basis: 100%;
+    background: linear-gradient(180deg, rgba(224,233,253,1) 0%, rgba(233,236,241,1) 90%);
+    color: black;
+    border-radius: 10px;
+    padding: 8px;
+    border: solid 2px black;
+    font-size: 1.5em;
+}
+section
+{
+    flex-basis: 280px;
+    background-color:lightgray;
+    aspect-ratio: 1;
+    text-align: center;
+    vertical-align: middle;
+}
+.kozep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label.error {
+    color: #FB3A3A;
+}
+@media all and (min-width: 884px) {
+    nav {
+        flex-basis: 39%;
+    }
+    .otnyolc{
+        flex-basis: 59%;
+        height: 98%;
+    }
+    aside {
+        flex-basis: 24%;
+    }
+    .idopontok_listaja{
+        flex-basis: 100%;
+    }
+    .magyarazat{
+        flex-basis: 49%;
+        background-color: #DF2935;
+    }
+    .leiras{
+        flex-basis: 74%;
+        background-color: #343330;
+        color: black;
+        border-radius: 10px;
+        
+    }
+    div{
+        flex-basis: 59%;
+    }
+    .kocka
+    {
+        font-size: 4em;
+    }
+    .bemutatas
+    {
+        flex-basis: 49%;
+    }
+    header{
+        font-size: 4em;
+    }
+}
+
+@media all and (min-width: 1300px) {
+    nav {
+        flex-basis: 39%;
+    }
+    .otnyolc {
+        flex-basis: 59%;
+        height: 98%;
+    }
+    aside {
+        flex-basis: 24%;
+    }
+    .idopontok_listaja{
+        flex-basis: 100%;
+    }
+    .magyarazat{
+        flex-basis: 49%;
+        background-color: #DF2935;
+    }
+    div{
+        flex-basis: 59%;
+    }
+    .leiras{
+        flex-basis: 74%;
+        background-color: #343330;
+        color: black;
+        border-radius: 10px;
+    }
+    .kocka
+    {
+        font-size: 5em;
+    }
+    .bemutatas
+    {
+        flex-basis: 49%;
+    }
+    header
+    {
+        font-size: 4em;
+    }
+    .lablec
+    {
+        font-size: 30px;
+    }
+}
+@media all and (min-width: 1960px)
+{
+    header
+    {
+        font-size: 7em;
+    }
+}
