@@ -43,7 +43,7 @@ footer {
     width:100%;
     background: whitesmoke;
     margin-top: 10px;
-    font-size: 2em;
+    font-size: 12px;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -171,7 +171,7 @@ section
 {
     flex-basis: 280px;
     background-color:lightgray;
-    aspect-ratio: 1;
+    aspect-ratio:  1 / 1;
     text-align: center;
     vertical-align: middle;
 }

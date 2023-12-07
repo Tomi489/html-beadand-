@@ -96,49 +96,23 @@
                     <label for="gluten"><input type="checkbox" name="gluten" id="gluten" class="kerdoiv">Gluténérzékeny
                         menü </label><br>
                     Melyik táborba kíván beiratkozni?<br>
-                    <select name="lista" class="kerdoiv-nagyobb">
-                        <label for="Június 23-30 Kezdő tábor">
-                            <option value="1.tabor" name="Június 23-30 Kezdő tábor" id="Június 23-30 Kezdő tábor">Június
-                                23-30 Kezdő tábor</option>
-                        </label>
-                        <label for="Június 16-23 Haladó tábor">
-                            <option value="2.tabor" name="Június 16-23 Haladó tábor" id="Június 16-23 Haladó tábor">
-                                Június 16-23 Haladó tábor</option>
-                        </label>
-                        <label for="Június 30 Július 7 Kapitányképző">
-                            <option value="3.tabor" name="Június 30 Július 7 Kapitányképző"
-                                id="Június 30 Július 7 Kapitányképző">Június 30 Július 7 Kapitányképző</option>
-                        </label>
-                        <label for="Július 7-14 Kezdő tábor">
-                            <option value="4.tabor" name="Július 7-14 Kezdő tábor" id="Július 7-14 Kezdő tábor">Július
-                                7-14 Kezdő tábor</option>
-                        </label>
-                        <label for="Július 14-21 Haladó tábor">
-                            <option value="5.tabor" name="Július 14-21 Haladó tábor" id="Július 14-21 Haladó tábor">
-                                Július 14-21 Haladó tábor</option>
-                        </label>
-                        <label for="Július 21-28 Kapitányképző">
-                            <option value="6.tabor" name="Július 21-28 Kapitányképző" id="Július 21-28 Kapitányképző">
-                                Július 21-28 Kapitányképző</option>
-                        </label>
-                        <label for="Július 28 Augusztus 4 Kezdő tábor">
-                            <option value="7.tabor" name="Július 28 Augusztus 4 Kezdő tábor"
-                                id="Július 28 Augusztus 4 Kezdő tábor">Július 28 Augusztus 4 Kezdő tábor</option>
-                        </label>
-                        <label for="Augusztus 4-11 Haladó tábor">
-                            <option value="8.tabor" name="Augusztus 4-11 Haladó tábor" id="Augusztus 4-11 Haladó tábor">
-                                Augusztus 4-11 Haladó tábor</option>
-                        </label>
-                        <label for="Augusztus 11-18 Kapitányképző">
-                            <option value="9.tabor" name="Augusztus 11-18 Kapitányképző"
-                                id="Augusztus 11-18 Kapitányképző">Augusztus 11-18 Kapitányképző</option>
-                        </label>
-                    </select>
+                    <label for="időpont_választás">
+                        <select name="lista" class="kerdoiv-nagyobb" id="időpont_választás">
+                            <option value="1.tabor" id="Június23-30Kezdőtábor">Június 23-30 Kezdő tábor</option>
+                            <option value="2.tabor" id="Június16-23Haladótábor">Június 16-23 Haladó tábor</option>
+                            <option value="3.tabor" id="Június30Július7Kapitányképző">Június 30 Július 7 Kapitányképző</option>
+                            <option value="4.tabor" id="Július7-14Kezdőtábor">Július 7-14 Kezdő tábor</option>
+                            <option value="5.tabor" id="Július14-21Haladótábor">Július 14-21 Haladó tábor</option>
+                            <option value="6.tabor" id="Július21-28Kapitányképző">Július 21-28 Kapitányképző</option>
+                            <option value="7.tabor" id="Július28Augusztus4Kezdőtábor">Július 28 Augusztus 4 Kezdő tábor</option>
+                            <option value="8.tabor" id="Augusztus4-11Haladótábor">Augusztus 4-11 Haladó tábor</option>
+                            <option value="9.tabor" id="Augusztus11-18Kapitányképző">Augusztus 11-18 Kapitányképző</option>
+                        </select>
+                    </label>
                     <br>
                     Ott szeretne-e aludni?<br>
-                    <label for="alvas"><input type="radio" name="alvas" value="1" checked class="kerdoiv"
-                            id="alvas">Igen </label><br>
-                    <label for="alvas"><input type="radio" name="alvas" value="0" class="kerdoiv" id="alvas">Nem</label>
+                    <input type="radio" name="alvas" value="1" checked class="kerdoiv">Igen<br>
+                    <input type="radio" name="alvas" value="0" class="kerdoiv">Nem
                     <br>
                     <label for="mindennap">Minden nap szeretne jönni? Ha nem a napok számát változtassa.<input
                             type="number" name="mindennap" class="kerdoiv-nagyobb" id="mindennap" value="7"></label>
@@ -155,7 +129,7 @@
         </article>
     </div>
     <footer>
-        <p class="lablec">Ez a weblap nem az eredeti oldala a táboroknak!</p>
+        <p class="lablec">Nem hivatalos weblap!</p>
         <p class="lablec">Kapcsolat: minta@emali.com</p>
     </footer>
 </body>
